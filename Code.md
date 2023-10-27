@@ -136,7 +136,3 @@ java -Xmx8g -jar ~/opt/snpEff/snpEff.jar \
 ann -c ~/Main/IB/Projects/1/snpEff_db/snpEff.config -v \
 k12 ~/Main/IB/Projects/1/VarScan_results_70.vcf >VarScan_results_ann.vcf
 ```
-
-```bash
-code
-```

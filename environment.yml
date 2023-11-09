@@ -1,4 +1,4 @@
-name: /home/holydiver/miniconda3/envs/RareSNP
+name: RareSNP
 channels:
   - conda-forge
   - bioconda

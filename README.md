@@ -26,7 +26,7 @@ T	1458	C	0.84
 
 ### Instruction
 
-**Don't forget to download files:**
+**Don't forget to download files and rename if needed:**
 
 **snakefile's folder must contain `{reference}.fna` - reference sequence, `{sample}.fastq` - sample reads.**
 

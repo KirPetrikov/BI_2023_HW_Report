@@ -3,6 +3,7 @@ rule bwa_index:
     input:
         "{reference}.fna"
     output:
+        "{reference}.fna.amb",
         "{reference}.fna.ann",
         "{reference}.fna.bwt",
         "{reference}.fna.pac",

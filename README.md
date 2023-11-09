@@ -4,7 +4,7 @@
 Supplementary files for project:
 
 #### Low-frequency mutation in the hemagglutinin gene of the influenza virus H3N2 alter the epitope D and may account for cases of vaccination ineffectiveness
-***Kirill Petrikov and Ilia Popov**
+***Kirill Petrikov and Ilia Popov***
 
 **Files**:
 - `Snakefile`  - rules file  for Snakemake workflow to reproduce pipeline

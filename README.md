@@ -1,9 +1,10 @@
-# BI_2023_HW_2_Report
-> *This is the repo for the 2th homework of the BI-2023 Practicum Course*
+## Homework 2 Report
+> *This is the repo for the homeworks of the BI-2023 Practicum Course*
 
 Supplementary files for project:
 
-### Title
+#### Low-frequency mutation in the hemagglutinin gene of the influenza virus H3N2 alter the epitope D and may account for cases of vaccination ineffectiveness
+***Kirill Petrikov and Ilia Popov**
 
 **Files**:
 - `Snakefile`  - rules file  for Snakemake workflow to reproduce pipeline

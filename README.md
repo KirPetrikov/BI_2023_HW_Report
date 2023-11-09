@@ -26,28 +26,25 @@ T	1458	C	0.84
 
 ### Instruction
 
-**Don't forget to download files.**
+**Don't forget to download files:**
 
-**Snakefile's folder must contain `{reference}.fna` - reference sequence, `{sample}.fastq` - sample reads.**
+**snakefile's folder must contain `{reference}.fna` - reference sequence, `{sample}.fastq` - sample reads.**
 
 - Clone repo
 ```bash
-git@github.com:
+git clone git@github.com:KirPetrikov/BI_2023_HW_Report.git
 ```
 
-- Create new environment `RareSNP`
+- Create new environment `RareSNP` or specified any name you want
 ```bash
 mamba env create -f environment.yml
-```
-
-or specified any name you want
-```bash
+#
 mamba env create -f environment.yml -n [ENV_NAME]
 ```
 
 - To run Snakemake workflow specify output tsv-file as `{reference}.{sample}.tsv`. 
 ```bash
-snakemake --cores=all -p reference_HA.sample1.tsv
+snakemake --cores=all -p reference_HA.sample_1.tsv
 ```
 
 For `samtools mpileup` parameter `--max-depth` is set up to 50'000.

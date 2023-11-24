@@ -25,7 +25,7 @@ mamba env create -f environment.yml
 
 You can try to install Quast in this environment.
 
-In case of error you can create another yaml-file:
+In case of error you can create environment `QUAST` from second yaml-file:
 
 ```bash
 mamba env create -f environment_q.yml

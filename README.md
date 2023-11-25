@@ -1,4 +1,4 @@
-## Homework 3 Report WIP
+## Homework 3 Report
 > *This is the repo for the homeworks of the BI-2023 Practicum Course*
 
 Supplementary files for project:

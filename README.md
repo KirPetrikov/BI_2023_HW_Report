@@ -3,7 +3,7 @@
 
 Supplementary files for project:
 
-#### A case of the emergence of a pathogenic E. coli strain caused by horizontal transfer of enterotoxin and antibiotic resistance genes
+#### A case of the emergence of a pathogenic *E. coli* strain caused by horizontal transfer of enterotoxin and antibiotic resistance genes
 
 ***Ariuna Aiusheeva and Kirill Petrikov***
 
@@ -23,7 +23,10 @@ git@github.com:KirPetrikov/BI_2023_HW_Report.git
 mamba env create -f environment.yml
 ```
 
-You can try to install Quast in this environment.
+You can try to install Quast in this environment in any convenient way, *e.g.*:
+```bash
+mamba install -c bioconda quast
+```
 
 In case of error you can create environment `QUAST` from second yaml-file:
 

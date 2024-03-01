@@ -47,6 +47,9 @@ After all installations are completed, run `de_analysis.sh`
 bash de_analysis.sh
 ```
 
+After the script is finished you can use the files `top50_up_genes_names.txt` and `top50_down_genes_names.txt` for GO-annotation by [GO Slim Mapper service](https://www.yeastgenome.org/goSlimMapper) (choose “Yeast GO-Slim: Process” option to reproduse our results).
+
+&nbsp;  
 ### Repo content
 
 **Root directory files**:
@@ -68,7 +71,7 @@ bash de_analysis.sh
 - `featureCounts_results.txt`, `featureCounts.log` - results and log of 'featureCounts' processing
 - `count_table.txt` - count table for `DESeq2`
 - `DESeq2_results.tsv` - list of genes with assessment of their differential expression by `DESeq2`
-- `top50_up.txt`, `top50_down.txt` - top-50 up- and downregulated genes
+- `top50_up.txt`, `top50_down.txt` - top-50 up- and downregulated genes filtered by p-value < 0.001
 - `GO_processes_up.html`, `GO_processes_down.html` - results of GO processes annotation for top-50 up- and downregulated genes
 
 &nbsp;  

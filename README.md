@@ -1,11 +1,12 @@
-## Homework 5 Report
+## Homework 6 Report
 > *This is the repo for the homeworks of the BI-2023 Practicum Course*
 
 Supplementary materials for project:
 
-## Title
+## Analysis of differentially expressed genes of *Saccharomyces cerevisiae* by RNA sequencing during bread dough fermentation revealed the transition to anaerobic metabolism
 ***by Dmitriy  Matach and Kirill Petrikov***
 
+&nbsp;  
 Here you can find:
 - scripts to reproduse analysis
 - detailed intermediate and final results
@@ -47,7 +48,7 @@ After all installations are completed, run `de_analysis.sh`
 bash de_analysis.sh
 ```
 
-After the script is finished you can use the files `top50_up_genes_names.txt` and `top50_down_genes_names.txt` for GO-annotation by [GO Slim Mapper service](https://www.yeastgenome.org/goSlimMapper) (choose “Yeast GO-Slim: Process” option to reproduse our results).
+After the script is finished you can find the files `top50_up_genes_names.txt` and `top50_down_genes_names.txt in `for_GO_annotation` directotfory and use them for GO-annotation by [GO Slim Mapper service](https://www.yeastgenome.org/goSlimMapper) (choose “Yeast GO-Slim: Process” option to reproduse our results).
 
 &nbsp;  
 ### Repo content

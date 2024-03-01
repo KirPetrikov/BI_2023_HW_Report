@@ -1,0 +1,72 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.6
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 4 BAM files                                      ||
+||                                                                            ||
+||                           SRR941816.fastq.gz.sort.bam                      ||
+||                           SRR941817.fastq.gz.sort.bam                      ||
+||                           SRR941818.fastq.gz.sort.bam                      ||
+||                           SRR941819.fastq.gz.sort.bam                      ||
+||                                                                            ||
+||             Output file : hisat_counts.txt                                 ||
+||                 Summary : hisat_counts.txt.summary                         ||
+||              Paired-end : no                                               ||
+||        Count read pairs : no                                               ||
+||              Annotation : GCF_000146045.2_R64_genomic_ed.gtf (GTF)         ||
+||      Dir for temp files : ./                                               ||
+||                                                                            ||
+||                 Threads : 1                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file GCF_000146045.2_R64_genomic_ed.gtf ...                ||
+||    Features : 6843                                                         ||
+||    Meta-features : 6470                                                    ||
+||    Chromosomes/contigs : 17                                                ||
+||                                                                            ||
+|| Process BAM file SRR941816.fastq.gz.sort.bam...                            ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 9773855                                              ||
+||    Successfully assigned alignments : 7305933 (74.7%)                      ||
+||    Running time : 0.10 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR941817.fastq.gz.sort.bam...                            ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 10832713                                             ||
+||    Successfully assigned alignments : 8016720 (74.0%)                      ||
+||    Running time : 0.11 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR941818.fastq.gz.sort.bam...                            ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 1885546                                              ||
+||    Successfully assigned alignments : 1404586 (74.5%)                      ||
+||    Running time : 0.02 minutes                                             ||
+||                                                                            ||
+|| Process BAM file SRR941819.fastq.gz.sort.bam...                            ||
+||    Single-end reads are included.                                          ||
+||    Total alignments : 6800280                                              ||
+||    Successfully assigned alignments : 4983525 (73.3%)                      ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "hisat_counts.txt.summar  ||
+|| y"                                                                         ||
+||                                                                            ||
+\\============================================================================//
+

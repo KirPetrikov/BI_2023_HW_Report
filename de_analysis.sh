@@ -63,14 +63,15 @@ echo -e "\n ---- DESeq analysis completed ----- \n"
 
 
 # ----- Select top-50 up- and down regulated genes for GO-annotation
-cat result.txt | grep -v NA | wc -l
-cat result.txt | awk '$4 > 1 || $4 < -1' | wc -l
+cat result.txt | awk '{FS="\t";OFS="\t"} $6<0.001 {print $0}' | grep -v NA > significant_results.txt
+cat significant_results.txt | sort -n -k 4 | head -50 > top50_up.txt
+cat significant_results.txt | sort -n -k 4 | tail -50 | sort -r -k 4 > top50_down.txt  
 
-cat result.txt | awk '$7<0.001' | grep -v NA > best_results.txt
-cat best_results.txt | sort -n -k 4 | head -50 > top50_up.txt
-cat best_results.txt | sort -n -k 4 | tail -50 | sort -r -k 4 > top50_down.txt  
+mkdir for_GO_annotation
 
-cat yeast_upreg.txt | cut -f 1 | cut -d "-" -f 2 > top50_up_genes_names.txt
-cat yeast_downreg.txt | cut -f 1 | cut -d "-" -f 2 > top50_down_genes_names.txt
+cat top50_up.txt | cut -f 1 | cut -d "-" -f 2 > for_GO_annotation/top50_up_genes_names.txt
+cat top50_down.txt | cut -f 1 | cut -d "-" -f 2 > for_GO_annotation/top50_down_genes_names.txt
 echo -e "\n ---- Script running finished ----- \n"
+
+echo -e "\n ---- Good luck! ----- \n"
 

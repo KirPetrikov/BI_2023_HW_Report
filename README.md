@@ -68,6 +68,8 @@ bash de_analysis.sh
 - `featureCounts_results.txt`, `featureCounts.log` - results and log of 'featureCounts' processing
 - `count_table.txt` - count table for `DESeq2`
 - `DESeq2_results.tsv` - list of genes with assessment of their differential expression by `DESeq2`
+- `top50_up.txt`, `top50_down.txt` - top-50 up- and downregulated genes
+- `GO_processes_up.html`, `GO_processes_down.html` - results of GO processes annotation for top-50 up- and downregulated genes
 
 &nbsp;  
 **`QC` directory files**

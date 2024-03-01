@@ -12,19 +12,37 @@ Here you can find:
 
 ### Instruction to reproduse analysis
 
-- Clone repo
+Clone repo
 ```bash
 git@github.com:KirPetrikov/BI_2023_HW_Report.git && \
 cd BI_2023_HW_Report/
 ```
 
-- Create new environment `Project_yeast`
+Create new environment `Project_yeast`
 ```bash
 mamba activate && \
 mamba env create -f environment.yml
 ```
 
-- Run `de_analysis.sh`
+&nbsp;  
+**Note:**
+the `R` programming language with the `DESeq2` and `gplots` libraries also must be installed.
+
+To install `R`, you can follow the [official CRAN instructions](https://cran.r-project.org/bin/linux/ubuntu/fullREADME.html).
+
+To install `DESeq2` and `gplots`, you can run the following commands in the `R` console:
+
+```R
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("DESeq2")
+
+BiocManager::install("gplots")
+```
+
+&nbsp;  
+After all installations are completed, run `de_analysis.sh`
 ```
 bash de_analysis.sh
 ```

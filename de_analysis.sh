@@ -58,8 +58,19 @@ echo -e "\n ---- Count table created ----- \n"
 # ----- Calculate differentialy expressed genes via DESeq2
 cat count_table.tsv | R -f deseq2.r
 # ---- Draw heatmap
-
-
 cat norm-matrix-deseq2.txt | R -f draw-heatmap.r
-echo -e "\n ---- Analysis completed ----- \n"
+echo -e "\n ---- DESeq analysis completed ----- \n"
+
+
+# ----- Select top-50 up- and down regulated genes for GO-annotation
+cat result.txt | grep -v NA | wc -l
+cat result.txt | awk '$4 > 1 || $4 < -1' | wc -l
+
+cat result.txt | awk '$7<0.001' | grep -v NA > best_results.txt
+cat best_results.txt | sort -n -k 4 | head -50 > top50_up.txt
+cat best_results.txt | sort -n -k 4 | tail -50 | sort -r -k 4 > top50_down.txt  
+
+cat yeast_upreg.txt | cut -f 1 | cut -d "-" -f 2 > top50_up_genes_names.txt
+cat yeast_downreg.txt | cut -f 1 | cut -d "-" -f 2 > top50_down_genes_names.txt
+echo -e "\n ---- Script running finished ----- \n"
 

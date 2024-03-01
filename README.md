@@ -14,13 +14,13 @@ Here you can find:
 
 - Clone repo
 ```bash
-git@github.com:KirPetrikov/BI_2023_HW_Report.git
+git@github.com:KirPetrikov/BI_2023_HW_Report.git && \
+cd BI_2023_HW_Report/
 ```
 
 - Create new environment `Project_yeast`
 ```bash
 mamba activate && \
-
 mamba env create -f environment.yml
 ```
 

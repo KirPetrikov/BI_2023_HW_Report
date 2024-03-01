@@ -48,7 +48,7 @@ After all installations are completed, run `de_analysis.sh`
 bash de_analysis.sh
 ```
 
-After the script is finished you can find the files `top50_up_genes_names.txt` and `top50_down_genes_names.txt in `for_GO_annotation` directotfory and use them for GO-annotation by [GO Slim Mapper service](https://www.yeastgenome.org/goSlimMapper) (choose “Yeast GO-Slim: Process” option to reproduse our results).
+After the script is finished you can find the files `top50_up_genes_names.txt` and `top50_down_genes_names.txt` in `for_GO_annotation` directory and use them for GO-annotation by [GO Slim Mapper service](https://www.yeastgenome.org/goSlimMapper) (choose “Yeast GO-Slim: Process” option to reproduse our results).
 
 &nbsp;  
 ### Repo content

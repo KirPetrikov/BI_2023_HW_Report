@@ -1,0 +1,10 @@
+# gene name           KO     thrshld  score   E-value KO definition
+#-------------------- ------ ------- ------ --------- ---------------------
+* WP_041590507.1      K20483  121.17  210.1   2.3e-64 lantibiotic biosynthesis protein
+* WP_007366526.1      K18220  579.97  714.6  6.7e-217 ribosomal protection tetracycline resistance protein
+* WP_014223573.1      K07497   13.87   18.0   7.7e-06 putative transposase
+* WP_014223583.1      K20484  119.77  161.1   1.7e-49 lantibiotic biosynthesis protein
+* WP_014226279.1      K07003  301.23  580.9  2.4e-176 uncharacterized protein
+* WP_041590506.1      K20483  121.17  594.2  2.3e-180 lantibiotic biosynthesis protein
+* WP_244262923.1      K06871  174.73  219.0     7e-67 uncharacterized protein
+* WP_244262939.1      K07458   48.57  196.7   2.7e-60 DNA mismatch endonuclease, patch repair protein [EC:3.1.-.-]

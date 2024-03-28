@@ -1,4 +1,4 @@
-## Homework 6 Report
+## Homework 7 Report
 > *This is the repo for the homeworks of the BI-2023 Practicum Course*
 
 Supplementary materials for project:
